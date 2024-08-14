@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --text-color-main: #ffff;
+    --text-color-info: rgb(32, 32, 32);
+    --color-span: #0cb0fc;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ----- BASE ----- */
+*{
+    margin: 0;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    /* line-height: 1.5; */
+    color: #333;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+header,
+main{
+    margin: 0 12% 0 12%;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 18% 0 18%;
+}
+
+.open-menu,
+.close-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list ul li {
+    margin: 0 1rem 0 1rem;
+    list-style: none;
+    text-align: center;
+}
+
+.nav-list-button {
+    background-color: var(--color-span);
+    color: var(--text-color-main);
+    padding: 12px 12px 12px 12px;
+    border: none;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* SECTION HOME */
+.section-home {
+    position: relative;
+    top: 35px;
+    width: 100%;
+    height: 700px;
+    background: url(../images/background-odontologia.png);
+    background-size: cover;
+}
+
+.section-home .div-home {
+    position: relative;
+    background: #0000002a;
+    top: 250px;
+    padding: 15px 10px 15px 10px;
+}
+
+.div-home {
+    height: 300px;
+}
+
+.section-home .div-home h1 {
+    position: relative;
+    left: 7%;
+    width: 700px;
+    font-size: 62px;
+    font-weight: 500;
+    color: var(--text-color-main);
+    background: transparent;
+    text-transform: uppercase;
+}
+
+.section-home .div-home h1 b {
+    font-size: 62px;
+    font-weight: 500;
+    color: var(--color-span);
+    background: transparent;
+    /* text-shadow: 1px 0px 5px #ffffff50; */
+}
+
+.section-home .div-home p {
+    position: relative;
+    width: 700px;
+    top: 20px;
+    left: 7%;
+    font-size: 18px;
+    color: var(--text-color-main);
+    background: transparent;
+}
+
+
+.section-home .div-home button {
+    position: relative;
+    top: 45px;
+    left: 7%;
+    padding: 12px 12px 12px 12px;
+    border: none;
+    border-radius: 30px;
+    color: var(--text-color-main);
+    background-color: var(--color-span);
+    box-shadow: 0px 4px 8px 0px #4f4f4f66;
+    cursor: pointer;
+}
+
+
+.section-home .div-home button i {
+    background: var(--color-span);
+    color: var(--text-color-main);
+    margin-right: 2px;
+}
+
+.section-home .div-home .uil.uil-arrow-left {
+    position: relative;
+    font-size: 26px;
+    top: 50px;
+    left: 8%;
+    display: inline-block;
+    background: transparent;
+    color: var(--text-color-main);
+    animation: mover-seta 2s infinite ease-in-out;
+}
+
+@keyframes mover-seta {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* SECTION SOLUÇÕES */
+.section-solucoes {
+    position: relative;
+    height: 800px;
+    margin-top: 200px;
+}
+
+.section-solucoes h1 {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin: 0 auto;
+}
+
+.section-solucoes h1 span {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--color-span);
+}
+
+.section-solucoes h4 {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin: 0 auto;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.section-solucoes ul {
+    width: 700px;
+    list-style: none;
+    margin: 40px auto; /* Centraliza horizontalmente */
+    padding: 0;
+}
+
+.section-solucoes ul li b {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.section-solucoes ul li {
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.section-solucoes ul i {
+    position: relative;
+    top: 35px;
+    left: -45px;
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 21px;
+    background-color: var(--color-span);
+    color: var(--text-color-main);
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.section-solucoes img {
+    width: 275px;
+    height: 275px;
+    position: absolute;
+    right: -50px;
+}
+
+
+/* SECTION VIDEO */
+.section-video {
+    position: relative;
+    height: 700px;
+    text-align: center;
+}
+
+.section-video h1 {
+    font-size: 32px;
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin: 0 auto;
+}
+
+.section-video iframe {
+    margin-top: 50px;
+    display: inline-block;
+}
+
+/* SECTION DEPOIMENTOS */
+.section-depoimentos {
+    position: relative;
+    text-align: center;
+    height: 650px;
+}
+
+.section-depoimentos h1 {
+    font-size: 30px;
+}
+
+.section-depoimentos h1 span {
+    font-size: 30px;
+    color: var(--color-span);
+}
+
+.section-depoimentos h4 {
+    font-size: 18px;
+    margin: 10px 0 50px 0;
+}
+
+.div-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    gap: 30px;
+    justify-content: center;
+}
+
+.section-depoimentos .card1,
+.section-depoimentos .card2,
+.section-depoimentos .card3 {
+    width: 300px;
+    height: 300px;
+}
+
+.section-depoimentos .card1 img,
+.section-depoimentos .card2 img,
+.section-depoimentos .card3 img {
+    width: 100%;
+    height: 150px;
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+
+.section-depoimentos .card1 span,
+.section-depoimentos .card2 span,
+.section-depoimentos .card3 span {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    background-color: #0cb0fc;
+    padding: 8px 10px 8px 10px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* SECTION SOBRE MIM */
+.section-sobre-mim {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+}
+
+.section-sobre-mim img {
+    width: 400px;
+    height: 500px;
+}
+
+.section-sobre-mim div {
+    width: 500px;
+    margin-left: 50px;
+}
+
+.section-sobre-mim span {
+    font-size: 14px;
+    color: #3333337c;
+}
+
+.section-sobre-mim h1 {
+    font-size: 49px;
+    text-transform: uppercase;
+}
+
+.section-sobre-mim ul {
+    list-style: none;
+}
+
+.section-sobre-mim ul li {
+    text-align: justify;
+}
+
+.section-sobre-mim ul i {
+    position: relative;
+    top: 35px;
+    left: -45px;
+    display: inline-flex;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    font-size: 21px;
+    background-color: var(--color-span);
+    color: var(--text-color-main);
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* SECTION LOCALIZAÇÃO */
+.section-localizacao {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.section-localizacao span {
+    font-size: 14px;
+    color: #3333337c;
+    text-transform: uppercase;
+}
+
+.section-localizacao h3 {
+    margin: 20px 35px 15px 0;
+}
+
+
+/* BUTTON WHATSAPP */
+.div-button-wtts {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #25D366;
+    bottom: 20px; /* Ajuste a distância do fundo conforme necessário */
+    right: 20px; /* Ajuste a distância da direita conforme necessário */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Garante que o botão fique sobre outros elementos */
+}
+
+.div-button-wtts i {
+    font-size: 38px;
+    background-color: #25D366;
+    color: var(--text-color-main);
+}
+
+/* FOOTER */
+footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    background-color: #0781ba;
+    margin-top: 100px;
+}
+
+footer h3 {
+    color: var(--text-color-main);
+    background-color: #0781ba;
+    padding: 35px;
+}
+
+footer span {
+    position: absolute;
+    bottom: 0;
+    color: var(--text-color-main);
+    background-color: #0781ba;
+    padding: 10px 10px;
+}
+
+
+
+/* --------- RESPONSIVE DESIGN --------- */
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    header {
+        margin: 2rem 10% 0 10%;
+    }
+
+    .section-solucoes img {
+        width: 125px;
+        height: 125px;
+        top: 325px;
+        right: -90px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        margin: 2rem 10% 0 10%;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.3s ease;
+        z-index: 102;
+    }
+
+    .nav-list ul {
+        position: relative;
+        width: 250px;
+        top: 100px;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .nav-list-button {
+       font-size: 14px;
+    }
+
+    .open-menu {
+        display: inline-block;
+    }
+
+    .nav-list.active {
+        right: 0;
+    }
+
+    .close-menu {
+        position: absolute;
+        display: block;
+        top: 25px;
+        right: 25px;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 102;
+    }
+
+    main {
+        margin: 0 6% 0 6%;
+    }
+
+    .section-home .div-home {
+        top: 200px;
+    }
+
+    .section-home .div-home h1 {
+        left: 0;
+        font-size: 34px;
+        width: 325px;
+    }
+
+    .section-home .div-home h1 b {
+        font-size: 34px;
+    }
+
+
+    .section-home .div-home p {
+        left: 0;
+        width: 325px;
+        font-size: 18px;
+    }
+
+    .section-home .div-home button {
+        left: 0;
+    }
+
+    .section-solucoes {
+        height: 1250px;
+    }
+
+    .section-solucoes ul {
+        position: relative;
+        width: 280px;
+        left: 5%;
+        z-index: 100;
+        background: transparent;
+    }
+
+    .section-solucoes ul li {
+        background: transparent;
+    }
+
+    .section-solucoes img {
+        position: absolute;
+        right: 5px;
+        filter: blur(2px);
+        z-index: 99;
+    }
+
+    .section-video {
+        height: 500px;
+    }
+
+    .section-video iframe {
+        width: 350px;
+        height: 200px;
+    }
+
+    .section-depoimentos {
+        height: 1450px;
+    }
+
+    .div-cards {
+        grid-template-columns: repeat(1,0fr);
+        gap: 125px;
+    }
+
+
+    .section-sobre-mim {
+        display: block;
+        height: 850px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-sobre-mim img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .section-sobre-mim div {
+        margin-left: 0;
+        width: 350px;
+    }
+
+    .section-sobre-mim h1 {
+        position: relative;
+        font-size: 34px;
+        margin: 0;
+    }
+
+    .section-localizacao {
+        display: block;
+    }
+
+    .section-localizacao div {
+        margin-bottom: 50px;
+    }
+
+    .section-localizacao iframe {
+        width: 350px;
+        height: 200px;
+    }
+
+    footer span {
+        font-size: 12px;
+    }
+}
